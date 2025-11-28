@@ -1,0 +1,383 @@
+﻿
+merchant_quarter = {
+	is_foreign = yes
+	stronger_power_projection = no
+	max_levels = 4
+	need_good_relation = yes
+	pop_type = burghers
+	
+	category = trade_category
+	
+	employment_size = foreign_trade_employment
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+	
+	country_potential = {
+		OR = {
+			tag = VEN
+			tag = ANC
+			tag = GEN
+			tag = PIS
+		}
+	}
+	location_potential = {
+		OR = {
+			owner = { is_subject_of = c:VEN }
+			owner = { is_subject_of = c:ANC }
+			owner = { is_subject_of = c:GEN }
+			owner = { is_subject_of = c:PIS }
+		}
+		OR = {
+			continent = continent:africa
+			continent = continent:asia
+			continent = continent:europe
+		}
+		NOT = {
+			region = region:italy_region
+		}	
+		is_port = yes
+	}
+	allow = {
+		is_port = yes
+		market = { in_trade_range_of = scope:actor }
+		owner = { is_subject_of = scope:actor }
+	}
+	
+	
+	
+	build_time = trade_post_build_time
+	
+	unique_production_methods = {
+		foreignguild_blacksmith = {
+			produced = tools
+			output = 0.5
+		
+			iron = 0.4
+			category = guild_input
+		}
+		
+		foreignguild_glassmaker = {
+			produced = glass
+			output = 0.3
+			sand = 1.0
+
+			category = guild_input
+		}
+
+		foreignguildguild_millet_brewery = {
+			millet = 0.5
+			lumber = 0.1
+			tools = 0.07
+			
+			produced = beer
+			output = 0.5
+
+			
+			category = guild_input
+		}
+		foreignguildguild_weaponmaker = {
+			produced = weaponry
+			output = 0.2
+		
+			lumber = 0.32
+			category = guild_input
+		}
+		foreignguild_jewelry_carver = {
+			produced = jewelry
+			output = 0.1
+		
+			stone = 0.4
+			category = guild_input
+		}
+		
+		foreignguild_pottery_maker = {
+			produced = pottery
+			output = 0.2
+		
+			clay = 0.33
+			category = guild_input
+		}
+	}
+	
+	
+	modifier = {
+		building_owner_maritime_presence = 0.05
+		merchant_power_from_building = 0.2
+		local_monthly_food_modifier = -0.03
+		local_monthly_development = 0.01
+	}
+}
+
+foreign_merchant_quarter = {
+	is_foreign = yes
+	stronger_power_projection = no
+	max_levels = 4
+	need_good_relation = yes
+	pop_type = burghers
+	
+	category = trade_category
+	
+	employment_size = foreign_trade_employment
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+	
+	country_potential = {
+		OR = {
+			tag = VEN
+			tag = ANC
+			tag = GEN
+			tag = PIS
+		}
+	}
+	location_potential = {
+		is_port = yes
+		OR = {
+			continent = continent:africa
+			continent = continent:asia
+			continent = continent:europe
+		}
+		NOT = {
+			region = region:italy_region
+		}	
+		NOR = {
+			owner = { is_subject_of = c:VEN }
+			owner = { is_subject_of = c:ANC }
+			owner = { is_subject_of = c:GEN }
+			owner = { is_subject_of = c:PIS }
+		}
+	}
+	allow = {
+		is_port = yes
+		market = { in_trade_range_of = scope:actor }
+	}
+	
+	
+	
+	build_time = trade_post_build_time
+	
+	unique_production_methods = {
+		guild_blacksmith = {
+			produced = tools
+			output = 0.5
+		
+			iron = 0.4
+			category = guild_input
+		}
+		
+		guild_glassmaker = {
+			produced = glass
+			output = 0.3
+			sand = 1.0
+
+			category = guild_input
+		}
+
+		guild_millet_brewery = {
+			millet = 0.5
+			lumber = 0.1
+			tools = 0.07
+			
+			produced = beer
+			output = 0.5
+
+			
+			category = guild_input
+		}
+		guild_weaponmaker = {
+			produced = weaponry
+			output = 0.2
+		
+			lumber = 0.32
+			category = guild_input
+		}
+		guild_jewelry_carver = {
+			produced = jewelry
+			output = 0.1
+		
+			stone = 0.4
+			category = guild_input
+		}
+		
+		guild_pottery_maker = {
+			produced = pottery
+			output = 0.2
+		
+			clay = 0.33
+			category = guild_input
+		}
+	}
+	
+	
+	modifier = {
+		building_owner_maritime_presence = 0.05
+		merchant_power_from_building = 0.2
+		local_monthly_food_modifier = -0.03
+		local_monthly_development = 0.01
+	}
+}
+
+fortified_consulate = {
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	
+	build_time = small_fort_building
+
+	expensive = yes
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	expensive = yes
+	
+	country_potential = {
+		OR = {
+			tag = VEN
+			tag = ANC
+			tag = GEN
+			tag = PIS
+		}
+	}
+	location_potential = {
+		OR = {
+			continent = continent:africa
+			continent = continent:asia
+			continent = continent:europe
+		}
+		NOT = {
+			region = region:italy_region
+		}	
+		NOR = {
+			owner = { is_subject_of = c:VEN }
+			owner = { is_subject_of = c:ANC }
+			owner = { is_subject_of = c:GEN }
+			owner = { is_subject_of = c:PIS }
+		}
+		is_port = yes
+	}
+	allow = {
+		is_port = yes
+		market = { in_trade_range_of = scope:actor }
+	}
+	
+	unique_production_methods = {
+	
+		consulate_maintenance = {
+			lumber = 0.1
+			paper = 0.2
+			weaponry = 0.02
+			tar = 0.02
+			category = building_maintenance
+		}
+	}
+	modifier = {
+		local_garrison_size = 0.1
+		local_unrest = -0.005
+		building_owner_maritime_presence = 0.05
+		merchant_power_from_building = 0.01
+		local_max_control = 0.05
+		local_proximity_source = 20
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = no
+	}
+	
+}
+fortified_baili = {
+	is_foreign = yes
+	stronger_power_projection = no
+	need_good_relation = yes
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	
+	build_time = small_fort_building
+
+	expensive = yes
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+	expensive = yes
+	
+	country_potential = {
+		OR = {
+			tag = VEN
+			tag = ANC
+			tag = GEN
+			tag = PIS
+		}
+	}
+	location_potential = {
+		OR = {
+			owner = { is_subject_of = c:VEN }
+			owner = { is_subject_of = c:ANC }
+			owner = { is_subject_of = c:GEN }
+			owner = { is_subject_of = c:PIS }
+		}
+		OR = {
+			continent = continent:africa
+			continent = continent:asia
+			continent = continent:europe
+		}
+		NOT = {
+			region = region:italy_region
+		}	
+		is_port = yes
+	}
+	allow = {
+		is_port = yes
+		market = { in_trade_range_of = scope:actor }
+		owner = { is_subject_of = scope:actor }
+	}
+	
+	build_time = small_fort_building
+	
+	unique_production_methods = {
+	
+		baili_maintenance = {
+			lumber = 0.1
+			paper = 0.2
+			weaponry = 0.02
+			tar = 0.02
+			category = building_maintenance
+		}
+	}
+	
+	
+	modifier = {
+		local_garrison_size = 0.1
+		local_unrest = -0.005
+		building_owner_maritime_presence = 0.05
+		merchant_power_from_building = 0.01
+		subject_loyalty = 1
+		subject_income_modifier = 0.01
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = no
+	}
+}
