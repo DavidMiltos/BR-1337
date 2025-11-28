@@ -1,0 +1,47 @@
+﻿
+bureaucratic_offices = {
+	is_foreign = no
+	max_levels = 2
+	pop_type = bureaucrats
+	
+	employment_size = normal_noble_employment
+
+	category = government_category
+	forbidden_for_estates = yes
+	
+	town = yes
+	city = yes
+	
+	
+	
+	expensive = yes
+	
+	country_potential = {
+		government_type = government_type:admin_imperial
+	}
+	
+	remove_if = {
+		location = {
+			NOT = { owner.government_type = government_type:admin_imperial }
+		}
+	}
+	build_time = government_build_time
+	
+	
+	
+	
+	unique_production_methods = {
+		bureaucratic_offices_maintenance = {
+			paper = 0.2
+			books = 0.05
+			tools = 0.1
+			category = building_maintenance
+		}
+	}
+	modifier = {
+		local_production_efficiency = 0.05
+		local_raw_material_output = 0.05
+		local_crown_estate_power = 0.05
+	}
+	construction_demand = town_building_construction
+}
