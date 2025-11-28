@@ -12780,7 +12780,6 @@ countries = {
 			}
 			include = "eastern_european_monarchy"
 			government = {
-				type = monarchy
 				heir_selection = cognatic_primogeniture
 				
 				ruler = byz_andronikos_iii_palaiologos
@@ -12883,6 +12882,7 @@ countries = {
 					theme_system
 					kritai_katholikoi
 				}
+				type = admin_imperial
 				
 				laws = {
 					legal_code_law = byzantine_law
@@ -12890,6 +12890,9 @@ countries = {
 					feudal_de_jure_law = by_blood
 					administrative_system = pronoia_system
 					patriarchate_law = state_patriarchate_policy
+					admin_imperial_de_jure_law = admin_imperial_by_edict
+					admin_imperial_levy_law = admin_imperial_militarised_farmers
+					admin_imperial_court_customs_law = admin_imperial_balanced_court_policy
 				}
 			}
 			#Setup to accurately portray the starting situation
@@ -29168,6 +29171,13 @@ countries = {
 			include = "expl_silk_road_east"
 			government = {
 				sinicized_vs_unsinicized = -50 # Bayan's policies
+
+				type = admin_imperial
+				laws = {
+					admin_imperial_de_jure_law = admin_imperial_by_edict
+					admin_imperial_levy_law = admin_imperial_militarised_farmers
+					admin_imperial_court_customs_law = admin_imperial_balanced_court_policy
+				}
 				
 				laws = {
 					status_of_the_han_law = limit_the_han_powers
@@ -29326,7 +29336,12 @@ countries = {
 			include = "expl_silk_road_center"
 			include = "expl_silk_road_east"
 			government = {
-				type = monarchy
+				type = admin_imperial
+				laws = {
+					admin_imperial_de_jure_law = admin_imperial_by_edict
+					admin_imperial_levy_law = admin_imperial_militarised_farmers
+					admin_imperial_court_customs_law = admin_imperial_balanced_court_policy
+				}
 			}
 			court_language = southern_mandarin_dialect
 			liturgical_language = classical_chinese_language
@@ -29341,7 +29356,12 @@ countries = {
 			include = "expl_silk_road_center"
 			include = "expl_silk_road_east"
 			government = {
-				type = monarchy
+				type = admin_imperial
+				laws = {
+					admin_imperial_de_jure_law = admin_imperial_by_edict
+					admin_imperial_levy_law = admin_imperial_militarised_farmers
+					admin_imperial_court_customs_law = admin_imperial_balanced_court_policy
+				}
 			}
 			court_language = southern_mandarin_dialect
 			liturgical_language = classical_chinese_language
@@ -29357,7 +29377,12 @@ countries = {
 			include = "expl_silk_road_center"
 			include = "expl_silk_road_east"
 			government = {
-				type = monarchy
+				type = admin_imperial
+				laws = {
+					admin_imperial_de_jure_law = admin_imperial_by_edict
+					admin_imperial_levy_law = admin_imperial_militarised_farmers
+					admin_imperial_court_customs_law = admin_imperial_balanced_court_policy
+				}
 			}
 			court_language = wu_language
 			liturgical_language = classical_chinese_language
@@ -32104,6 +32129,12 @@ countries = {
 				kurdish_culture
 				armenian_culture
 				syriac_culture
+			}
+			timed_modifier = {
+				modifier = "nap_struggle_for_independence" #todo make unique mod modifier 
+				start_date = 1333.1.1
+				date = 1375.1.1
+				size = 1.0
 			}
 			religious_school = maturidi_school #Widespread among the Turks together with Hanafi
 		}
