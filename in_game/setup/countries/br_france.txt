@@ -1,0 +1,121 @@
+﻿
+##Neustria
+REPLACE_OR_CREATE:FRA = {
+	color = map_FRA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = rgb { 0 38 94 }
+	unit_color1 = rgb { 171 19 19 }
+	unit_color2 = rgb { 200 200 210 }
+
+	culture_definition = french
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 3
+}
+
+REPLACE_OR_CREATE:BUR = {
+	color = map_BUR
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = burgundian
+	religion_definition = catholic
+}
+
+#Aquitaine
+REPLACE_OR_CREATE:AQN = {
+	color = map_AQN
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = gascon
+	religion_definition = catholic
+}
+
+#Br edit new countries
+#Austrasia
+REPLACE_OR_CREATE:LOT = {
+	color = rgb { 66 66 175 }
+	
+	unit_color0 = rgb { 0 38 94 }
+	unit_color1 = rgb { 171 19 19 }
+	unit_color2 = rgb { 200 200 210 }
+
+	culture_definition = french
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 3
+}
+
+#Lyon
+LYN = {
+    color = rgb { 16 66 145 }
+
+    culture_definition = arpitan
+    religion_definition = catholic
+}
+
+#Viviers
+VIV = {
+    color = rgb { 56 41 202 }
+
+    culture_definition = auvergnat
+    religion_definition = catholic
+}
+
+#Clermont
+CMT = {
+    color = rgb { 46 41 140 }
+
+    culture_definition = auvergnat
+    religion_definition = catholic
+}
+
+#Combraille
+CMB = {
+    color = rgb { 33 81 166 }
+
+    culture_definition = auvergnat
+    religion_definition = catholic
+}
+
+#Châteauroux
+CEX = {
+    color = rgb { 44 44 144 }
+
+    culture_definition = berrichon
+    religion_definition = catholic
+}
+
+#Touraine
+TNE = {
+    color = rgb { 55 44 133 }
+
+    culture_definition = french
+    religion_definition = catholic
+}
+
+#Amiens
+AMI = {
+    color = rgb { 75 41 202 }
+
+    culture_definition = picard
+    religion_definition = catholic
+}
+
+#Vermandois
+VRM = {
+    color = rgb { 25 25 95 }
+
+    culture_definition = picard
+    religion_definition = catholic
+}
+
+#Soissons
+SSN = {
+    color = rgb { 55 75 202 }
+
+    culture_definition = picard
+    religion_definition = catholic
+}

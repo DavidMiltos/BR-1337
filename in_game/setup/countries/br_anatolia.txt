@@ -1,0 +1,160 @@
+﻿#BR edited files
+REPLACE_OR_CREATE:CIL = {
+	color = rgb { 148 135 129 } 
+
+	#BR EDIT
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:CYP = {
+	color = map_cyprus
+	color2 = rgb { 245 200 30 } #same as in EU4
+
+	#BR EDIT
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:TRE = {
+	color = rgb { 65 84 167 } #BR edited
+
+	culture_definition = pontic_greek_culture
+	religion_definition = orthodox
+}
+
+###-BR ADDITIONS-###
+
+#Africa
+REPLACE_OR_CREATE:AGY = { #BR addition
+	color = rgb { 185 58 75 }
+
+	culture_definition = aegyptian_greek_culture
+	religion_definition = orthodox
+
+}
+
+REPLACE_OR_CREATE:AFK = { #BR addition
+	color = rgb { 115 88 125 }
+
+	culture_definition = african_greek_culture
+	religion_definition = orthodox
+
+}
+
+REPLACE_OR_CREATE:RIC = { #BR addition
+	color = rgb { 175 38 65 }
+
+	culture_definition = indikes_greek_culture
+	religion_definition = orthodox
+
+	description_category = administrative
+	difficulty = 3
+}
+
+REPLACE_OR_CREATE:INK = { #BR addition
+	color = rgb { 175 75 95 }
+
+	culture_definition = indikes_greek_culture
+	religion_definition = orthodox
+}
+
+#Anatolia
+REPLACE_OR_CREATE:ANA = { #BR addition
+	color = rgb { 205 38 50 }
+
+	culture_definition = anatolian_greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:ICO = { #BR addition
+	color = rgb { 155 58 50 }
+
+	culture_definition = anatolian_greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:AON = { #BR addition
+	color = rgb { 175 38 60 }
+
+	culture_definition = anatolian_greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:KAP = { #BR addition
+	color = rgb { 150 38 75 }
+
+	culture_definition = cappadocian_greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:PAF = { #BR addition
+	color = rgb { 175 50 138 }
+
+	culture_definition = pontic_greek_culture
+	religion_definition = orthodox
+}
+
+REPLACE_OR_CREATE:DER = { #BR addition
+	color = rgb { 75 99 148 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+REPLACE_OR_CREATE:KOG = { #BR addition
+	color = rgb { 57 118 88 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+REPLACE_OR_CREATE:MES = { #BR addition
+	color = rgb { 137 88 48 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+REPLACE_OR_CREATE:VAN = { #BR addition
+	color = rgb { 137 128 68 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+REPLACE_OR_CREATE:GAN = { #BR addition
+	color = rgb { 157 98 48 }
+
+	culture_definition = armenian_culture
+	religion_definition = miaphysite
+}
+
+#Levant
+REPLACE_OR_CREATE:AOI = { #BR addition
+	color = rgb { 205 38 50 }
+
+	culture_definition = syrenikoi_greek_culture
+	religion_definition = orthodox
+}
+
+#Holy Orders
+REPLACE_OR_CREATE:OHS = {
+	color = rgb { 152 125 104 }
+
+	culture_definition = syrenikoi_greek_culture
+	religion_definition = orthodox
+
+	description_category = military
+	difficulty = 3
+}
+
+REPLACE_OR_CREATE:SGO = {
+	color = rgb { 162 105 134 }
+
+	culture_definition = georgian_culture
+	religion_definition = orthodox
+
+	description_category = military
+	difficulty = 3
+}
